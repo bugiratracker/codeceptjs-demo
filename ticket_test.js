@@ -35,4 +35,4 @@ xScenario('change priority of ticket', async (I, project) => {
   I.amOnPage(`/project/${project}/tickets/${data.ticket.cid}`);
   I.waitForElement('#detail');
   pause()
-}).tag('priority');
+});

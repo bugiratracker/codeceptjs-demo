@@ -8,7 +8,7 @@ module.exports = function() {
       this.fillField('Email', email);
       this.click('Login');
       this.waitInUrl('codeceptjs.bugira.app', 20);
-      this.fillField('Password', password);
+      this.retry(2).fillField('Password', password);
       this.click('Sign in');
       this.see('CodeceptJS Projects');      
     }
