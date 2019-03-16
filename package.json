@@ -1,0 +1,18 @@
+{
+  "name": "codeceptjs-demo-bugira",
+  "version": "1.0.0",
+  "description": "CodeceptJS tests for full-stack single-page application",
+  "main": "index.js",
+  "scripts": {
+    "test": "codeceptjs run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^2.0.7",
+    "dotenv": "^7.0.0",
+    "faker": "^4.1.0",
+    "puppeteer": "^1.13.0",
+    "rosie": "^2.0.1"
+  }
+}
