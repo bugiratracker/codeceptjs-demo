@@ -7,13 +7,11 @@ module.exports = function() {
       this.amOnPage('https://bugira.app/auth');
       this.fillField('Email', email);
       this.click('Login');
-      this.waitInUrl('codeceptjs.bugira.app', 20);
-      this.retry(2).fillField('Password', password);
+      this.wait(2); // due to some puppeteer issue that's the most stable
+      this.fillField('Password', password);
       this.click('Sign in');
       this.see('CodeceptJS Projects');      
     }
-    // Define custom steps here, use 'this' to access default methods of I.
-    // It is recommended to place a general 'login' function here.
 
   });
 }

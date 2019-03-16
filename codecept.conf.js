@@ -19,7 +19,6 @@ exports.config = {
       url: host,
       show: process.profile === 'show',
       windowSize: '1600x1200',
-      keepCookies: true,
       restart: false,
       chrome: {
         args: ['--no-sandbox']
