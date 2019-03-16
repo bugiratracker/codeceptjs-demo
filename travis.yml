@@ -1,6 +1,3 @@
 language: node_js
-cache:
-  directories:
-    - node_modules
 script:
-- npx run codeceptjs run
+  - npx codeceptjs run
