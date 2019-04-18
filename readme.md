@@ -16,25 +16,36 @@ This project should be taken as an example. Learn how to work with:
 npm install
 ```
 
-Use *provided account* (soon to be enabled):
+
+Create `.env` file [from template](https://gist.github.com/DavertMik/b6fed3199454571785c38e060dd5304e).
+
+*Be aware, that you use a free shared account for demo purpose, it can be chaged or disabled in any moment*.
+
+Execute tests
 
 ```
-npx run codeceptjs --debug
+npx run codeceptjs run --debug --profile show
 ```
+
+
+## Testing Hints
+
+* We use `ApiDataFactory` to create tickets via API
+* We use `bootstrap` to inject data into container
+* We use dynamic config and [profiles](https://codecept.io/configuration#profile) to run tests in headless/window mode 
+* We use `autoLogin` plugin
+* We use `.env` to store sensitive data
 
 ---
 
-## Bugira Bugtracker
+## What is Bugira Bugtracker?
 
 
-We test our friendly project: [Bugira Bugtracker](http://bugira.com). 
-It's a single page application written in Rails & EmberJS. 
-It allows users to send bugreports via embeddable widget,
-collecting all session information.
-
+We test our friendly project: [Bugira Bugtracker](https://www.bugira.com). It's a single page application written in Rails & EmberJS. It allows users to send bugreports via embeddable widget, collecting all session information. The first bugreporter that sends bug for you!
 
 ---
 
 Get better bugreports with [Bugira Bugtracker](https://bugira.com)
 
 [![](https://www.bugira.com/assets/images/icons/logo.svg)](https://bugira.com)
+
