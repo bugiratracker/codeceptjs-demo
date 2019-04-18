@@ -9,6 +9,10 @@ This project should be taken as an example. Learn how to work with:
 * Auto login
 * Data generation with faker
 * autoRetry plugin
+* Using `bootstrap` to inject data into container
+* Dynamic config and [profiles](https://codecept.io/configuration#profile) to run tests in headless/window mode 
+* Using `.env` to store sensitive data
+
 
 ## Install and run
 
@@ -24,17 +28,9 @@ Create `.env` file [from template](https://gist.github.com/DavertMik/b6fed319945
 Execute tests
 
 ```
-npx run codeceptjs run --debug --profile show
+npx codeceptjs run --debug --profile show
 ```
 
-
-## Testing Hints
-
-* We use `ApiDataFactory` to create tickets via API
-* We use `bootstrap` to inject data into container
-* We use dynamic config and [profiles](https://codecept.io/configuration#profile) to run tests in headless/window mode 
-* We use `autoLogin` plugin
-* We use `.env` to store sensitive data
 
 ---
 
