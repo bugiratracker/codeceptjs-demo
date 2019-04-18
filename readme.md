@@ -39,6 +39,8 @@ npx codeceptjs run --debug --profile show
 
 We test our friendly project: [Bugira Bugtracker](https://www.bugira.com). It's a single page application written in Rails & EmberJS. It allows users to send bugreports via embeddable widget, collecting all session information. The first bugreporter that sends bug for you!
 
+![](https://user-images.githubusercontent.com/220264/56353972-56975080-61db-11e9-8b23-06e8b4620995.png)
+
 ---
 
 Get better bugreports with [Bugira Bugtracker](https://bugira.com)
